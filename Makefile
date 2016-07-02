@@ -3,7 +3,7 @@ CC=gcc
 #linker
 LD=gcc
 #include file directory
-CFLAGS=-I.
+CFLAGS=-I. -std=c99
 
 #linker rule
 testSort: main.o insertionSort.o sort1.o sort2.o
@@ -17,7 +17,7 @@ testSort: main.o insertionSort.o sort1.o sort2.o
 
 main.o: main.c
 	#gcc -c -I. main.c
-	$(CC) -std=c99 -ggdb -c $(CFLAGS) main.c	
+	$(CC) -c $(CFLAGS) main.c	
 	 
 
 insertionSort.o: insertionSort.c

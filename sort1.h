@@ -1,3 +1,1 @@
-void main();
-
- 
+void sort1(int *a, int n);
